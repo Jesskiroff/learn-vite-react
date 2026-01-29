@@ -3,16 +3,31 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const food = "candy and popcorn"
+
 function App() {
-  const [count, setCount] = useState(0)
+
+  // To render your h1 at the top of the screen, use absolute positioning with CSS.
+  // This will require a CSS class. Let's add it inline for demonstration.
+  // You can move this CSS to App.css if you want to keep styles separate.
+
 
   return (
-    <>
+    <div>
      
-      <h1>vite practice</h1>
-      
+      <h1>Vite Practice</h1>
+      <ul>
+        <li>Practice rendering</li>
+        <li>Practice coding</li>
+        <li>Practice React</li>
+        <li>Practice JS</li>
+
     
-    </>
+      </ul>
+      
+      <p>I will start by rendering food: {food}</p>
+    
+      </div>
   )
 }
 
