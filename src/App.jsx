@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
+import Note from './Note'
+import Footer from './Footer'
 
 const food = "candy and popcorn"
 
@@ -31,7 +33,9 @@ const MyLastName = "Doe"
       </ul>
       
       <p>I will start by rendering food: {food}</p> 
-      
+      <Note />
+
+      <Footer />
       </div>
   )
 }
