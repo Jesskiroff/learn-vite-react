@@ -10,17 +10,18 @@ function App() {
   // To render your h1 at the top of the screen, use absolute positioning with CSS.
   // This will require a CSS class. Let's add it inline for demonstration.
   // You can move this CSS to App.css if you want to keep styles separate.
-
+var numb = 1
 
   return (
     <div>
      
-      <h1>Vite Practice</h1>
+      <h1>Vite Practice {numb}</h1>
       <ul>
         <li>Practice rendering</li>
         <li>Practice coding</li>
         <li>Practice React</li>
         <li>Practice JS</li>
+        
 
     
       </ul>
