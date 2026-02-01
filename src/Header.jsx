@@ -3,7 +3,9 @@ import './styles.css';
 
 function Header() {
     return (
-        <header><h1>My Header</h1></header>
+        <header>
+            <h1>Vite Practice</h1>
+        </header>
     )
 }
 

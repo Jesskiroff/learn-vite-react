@@ -20,7 +20,7 @@ const MyLastName = "Doe"
   return (
     <div>
       <Header />
-      <h1>Vite Practice {numb}; {Math.random()} ~ created by: {myName} {MyLastName}</h1>
+      <h1>{numb}; {Math.random()} ~ created by: {myName} {MyLastName}</h1>
       <p>String literals: {personOne} and {personTwo}</p>
       <ul>
         <li>Practice React</li>
