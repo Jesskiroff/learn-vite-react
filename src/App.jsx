@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
 import Note from './Note'
-import Footer from './Footer'
+import Footer from './footer' // Capital F if your file is Footer.jsx and idk why it's not capitaling
 
 const food = "candy and popcorn"
 
@@ -18,12 +18,16 @@ const personOne = "John"
 const personTwo = "Jane"
 const myName = "Jess"
 const MyLastName = "Doe"
+const currentdate = new Date(2026, 1, 6)
+const year = currentdate.getFullYear()
+
 
   return (
     <div>
       <Header />
       <h1>{numb}; {Math.random()} ~ created by: {myName} {MyLastName}</h1>
       <p>String literals: {personOne} and {personTwo}</p>
+      <p>Year: {year} & Month: {currentdate.getMonth()}</p>
       <ul>
         <li>Practice React</li>
         <li>Practice JS</li>
