@@ -4,8 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
 import Note from './Note'
-import Footer from './footer' // Capital F if your file is Footer.jsx and idk why it's not capitaling
-
+import Footer from './Footer' ;// Capital F if your file is Footer.jsx and idk why it's not capitaling
+import Image from './Image';
 // const food = "candy and popcorn"
 
 function App() {
@@ -25,22 +25,11 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <h1>{numb}; {Math.random()} ~ created by: {myName} {MyLastName}</h1>
-      <p>String literals: {personOne} and {personTwo}</p>
-      <p>Year: {year} & Month: {currentdate.getMonth()}</p>
-      <ul>
-        <li>Practice React</li>
-        <li>Practice JS</li>
-        
-
-    
-      </ul> */}
-{/*       
-      <p>I will start by rendering food: {food}</p>  */}
-      <Note />
-
-      <Footer />
-      </div>
+      <Note/>
+      <Image/>
+      <Footer/>
+    </div>
+     
   )
 }
 
