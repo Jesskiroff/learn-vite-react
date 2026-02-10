@@ -6,26 +6,26 @@ import Header from './Header'
 import Note from './Note'
 import Footer from './footer' // Capital F if your file is Footer.jsx and idk why it's not capitaling
 
-const food = "candy and popcorn"
+// const food = "candy and popcorn"
 
 function App() {
 
   // To render your h1 at the top of the screen, use absolute positioning with CSS.
   // This will require a CSS class. Let's add it inline for demonstration.
   // You can move this CSS to App.css if you want to keep styles separate.
-var numb = 1
-const personOne = "John"
-const personTwo = "Jane"
-const myName = "Jess"
-const MyLastName = "Doe"
-const currentdate = new Date(2026, 1, 6)
-const year = currentdate.getFullYear()
+// var numb = 1
+// const personOne = "John"
+// const personTwo = "Jane"
+// const myName = "Jess"
+// const MyLastName = "Doe"
+// const currentdate = new Date(2026, 1, 6)
+// const year = currentdate.getFullYear()
 
 
   return (
     <div>
       <Header />
-      <h1>{numb}; {Math.random()} ~ created by: {myName} {MyLastName}</h1>
+      {/* <h1>{numb}; {Math.random()} ~ created by: {myName} {MyLastName}</h1>
       <p>String literals: {personOne} and {personTwo}</p>
       <p>Year: {year} & Month: {currentdate.getMonth()}</p>
       <ul>
@@ -34,9 +34,9 @@ const year = currentdate.getFullYear()
         
 
     
-      </ul>
-      
-      <p>I will start by rendering food: {food}</p> 
+      </ul> */}
+{/*       
+      <p>I will start by rendering food: {food}</p>  */}
       <Note />
 
       <Footer />
