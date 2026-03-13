@@ -3,7 +3,8 @@ import React from 'react';
 function Footer() {
     return (
         <footer>
-            <p>Year: {new Date().getFullYear()}</p>
+            <h1>Footer</h1>
+            {/* <p>Year: {new Date().getFullYear()}</p> */}
         </footer>
     )
 }

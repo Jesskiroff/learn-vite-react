@@ -6,6 +6,8 @@ import Header from './Header'
 import Note from './Note'
 import Footer from './Footer' ;// Capital F if your file is Footer.jsx and idk why it's not capitaling
 import Image from './Image';
+// import Card from './Card';
+// import contacts from '../contacts'
 // const food = "candy and popcorn"
 
 function App() {
@@ -27,6 +29,12 @@ function App() {
       <Header />
       <Note/>
       <Image/>
+      {/* <Card
+        name = {contacts[0].name}
+        imgURL = {contacts[0].imgURL}
+        email = {contacts[0].email}
+        phone = {contacts[0].phone}
+      /> */}
       <Footer/>
     </div>
      
