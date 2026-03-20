@@ -12,9 +12,9 @@ const contacts = [
         phone: "123-456-7890"
     },
     {
-        name: "John Doe",
+        name: "Joe shmoe",
         imgURL: "https://via.placeholder.com/150",
-        email: "john.doe@example.com",
+        email: "joeshmoe@example.com",
         phone: "123-456-7890"
     }
 ]

@@ -35,6 +35,18 @@ function App() {
         email = {contacts[0].email}
         phone = {contacts[0].phone}
       />
+      <Card
+        name = {contacts[1].name}
+        imgURL = {contacts[1].imgURL}
+        email = {contacts[1].email}
+        phone = {contacts[1].phone}
+      />
+      <Card
+        name = {contacts[2].name}
+        imgURL = {contacts[2].imgURL}
+        email = {contacts[2].email}
+        phone = {contacts[2].phone}
+      />
       <Footer/>
     </div>
      
