@@ -1,15 +1,13 @@
 import React from 'react';
 import './styles.css';
-import '../contacts.js';
 
-function Card() {
+function Card(props) {
     return (
         <div className="card">
-            <h2 className='name'>{contacts.name}</h2>
-            <img src={contacts.imgURL} alt="avatar_img" className="avatar_img" />
-            <p className='email'>{contacts.email}</p>
-            <p className='phone'>{contacts.phone}</p>
-
+            <h2 className='name'>{props.name}</h2>
+            <img src={props.imgURL} alt="avatar_img" className="avatar_img" />
+            <p className='email'>{props.email}</p>
+            <p className='phone'>{props.phone}</p>
         </div>
     )
 }
