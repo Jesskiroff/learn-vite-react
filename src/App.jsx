@@ -24,12 +24,24 @@ function App() {
 // const year = currentdate.getFullYear()
 
 
+function createCard(contact){
+  return <Card 
+  key={contact.id}
+  name = {contact.name}
+  img = {contact.imgURL}
+  tel = {contact.phone}
+  email ={contact.email}
+  />;
+}
+
   return (
     <div>
       <Header />
       <Note/>
       <Image/>
-      <Card
+      <h1 classname ="heading">My Contacts</h1>
+      {/* {contacts.map()} */}
+      {/* <Card
         name = {contacts[0].name}
         imgURL = {contacts[0].imgURL}
         email = {contacts[0].email}
@@ -46,7 +58,7 @@ function App() {
         imgURL = {contacts[2].imgURL}
         email = {contacts[2].email}
         phone = {contacts[2].phone}
-      />
+      /> */}
       <Footer/>
     </div>
      
