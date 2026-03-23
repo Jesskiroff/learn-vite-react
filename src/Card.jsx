@@ -4,9 +4,9 @@ import './Card.css';
 function Card(props) {
     return (
       <div className={props.className}>  {/* use it here */}
-        <img src={props.imgURL} alt="avatar_img" className="avatar_img" />
+        <img src={props.img} alt="avatar_img" className="avatar_img" />
         <h2>{props.name}</h2>
-        <p>{props.phone}</p>
+        <p>{props.tel}</p>
         <p>{props.email}</p>
       </div>
     );
