@@ -40,7 +40,7 @@ function createCard(contact){
       <Note/>
       <Image/>
       <h1 classname ="heading">My Contacts</h1>
-      {/* {contacts.map()} */}
+      {contacts.map(createCard)}
       {/* <Card
         name = {contacts[0].name}
         imgURL = {contacts[0].imgURL}
