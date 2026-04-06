@@ -52,25 +52,19 @@ function createCard(contact) {
       <Image/>
       
       <h1 className ="heading">My Contacts</h1>
-      {contacts.map(createCard)}
-      {/* <Card
-        name = {contacts[0].name}
-        imgURL = {contacts[0].imgURL}
-        email = {contacts[0].email}
-        phone = {contacts[0].phone}
-      />
-      <Card
-        name = {contacts[1].name}
-        imgURL = {contacts[1].imgURL}
-        email = {contacts[1].email}
-        phone = {contacts[1].phone}
-      />
-      <Card
-        name = {contacts[2].name}
-        imgURL = {contacts[2].imgURL}
-        email = {contacts[2].email}
-        phone = {contacts[2].phone}
-      /> */}
+      <di classname ="dictionary">
+        {contacts.map(contact => (
+    <Card
+      key={contact.id}
+      name={contact.name}
+      img={contact.imgURL}
+      tel={contact.phone}
+      email={contact.email}
+      className="card"  
+    />
+))}
+
+      </di>
       <Footer/>
     </div>
      
