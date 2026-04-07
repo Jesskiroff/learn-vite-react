@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import './App.css'
 import Header from './Header'
 import Note from './Note'
@@ -12,27 +17,6 @@ import contacts from '../contacts'
 
 function App() {
 
-  // To render your h1 at the top of the screen, use absolute positioning with CSS.
-  // This will require a CSS class. Let's add it inline for demonstration.
-  // You can move this CSS to App.css if you want to keep styles separate.
-// var numb = 1
-// const personOne = "John"
-// const personTwo = "Jane"
-// const myName = "Jess"
-// const MyLastName = "Doe"
-// const currentdate = new Date(2026, 1, 6)
-// const year = currentdate.getFullYear()
-
-
-// function createCard(contact){
-//   return <Card 
-//   key={contact.id}
-//   name = {contact.name}
-//   img = {contact.imgURL}
-//   tel = {contact.phone}
-//   email ={contact.email}
-//   />;
-// }
 
 function createCard(contact) {
   return <Card
@@ -50,7 +34,13 @@ function createCard(contact) {
       <Header />
       <Note/>
       <Image/>
-      
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+  
       <h1 className ="heading">My Contacts</h1>
       <di classname ="dictionary">
         {contacts.map(contact => (
